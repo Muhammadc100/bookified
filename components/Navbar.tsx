@@ -13,11 +13,10 @@ const navItems = [
 
 const Navbar = () => {
   const pathname = usePathname()
-  const { isSignedIn } = useUser()
-  const { user } = useUser();
+  const { isSignedIn, user } = useUser()
 
   return (
-    <header className="w-full fixed z-50 bg-('--bg-primary')">
+    <header className="w-full fixed z-50 bg-(--bg-primary)">
       <div className='wrapper navbar-height py-4 flex justify-between items-center'>
         <Link href="/" className='flex gap-0.5 items-center'>
           <Image src='/assets/logo.png' alt='Bookified' width={42} height={26} className='rounded-full' />
